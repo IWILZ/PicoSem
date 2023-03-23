@@ -42,3 +42,4 @@ bool anyDataFor(uint8_t core);
 ```
 `true` if there is a new data set ready rof `core`
 
+###For more info see the examples and enjoy!
