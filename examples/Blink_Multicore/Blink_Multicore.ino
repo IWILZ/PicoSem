@@ -28,7 +28,7 @@ bool DataFrom0=false;     // true=LED ON, false=LED OFF
 // ------------------------- setup() ------------------------
 void setup(){
   Sem.setDataEmptyFor(1);         // no valid data for core1
-  Serial.begin();
+  Serial.begin(115200);
   while(!Serial);  
   delay(5000);
   Serial.println("\n------------ Core0 started ------------");
