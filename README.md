@@ -15,7 +15,7 @@ Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/
 So for this reason I started thinking about a different solution in which the size of the exchange data buffers could be potentially limited only by the available memory.
 
 ## **How to use the library**
-First of all create an istance with:
+**First of all create an istance with:**
 ```ruby
 #define PICO_EMPTY true
 PicoSem Sem(PICO_EMPTY,PICO_EMPTY);
