@@ -20,7 +20,7 @@ First of all create an istance with:
 #define PICO_EMPTY true
 PicoSem Sem(PICO_EMPTY,PICO_EMPTY);
 ```
-And then you can use the following calls remembering that valid values of `core` are **0 and 1**:
+**And then you can use the following calls remembering that valid values of `core` are 0 and 1:**
 ```ruby
 void setDataEmptyFor(uint8_t core);
 ```
