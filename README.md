@@ -10,6 +10,6 @@ But in order to be able to delegate different tasks to the 2 cores by transferri
 
 On the other hand, I know the Arduino IDE and C/C++ quite well but I don't have skills in other environments and languages and unfortunately on the net I struggled to find useful information regarding the use of Pi Pico in the Aduino environment.
 
-Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/latest/multicore.html where at the "Multicore Processing" chapter is described how to manage the dialogue between the 2 cores through the use of semaphores and FIFO queues but the limitation is that any information size is reduced to a single uint32_t variable.
+Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/latest/multicore.html where at the "**Multicore Processing**" chapter is described how to manage the dialogue between the 2 cores through the use of semaphores and FIFO queues but the limitation is that any information size is reduced to a single uint32_t variable.
 
 So for this reason I started thinking about a different solution in which the size of the data exchange buffers could be potentially limited only by the available memory.
