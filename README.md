@@ -1,7 +1,7 @@
 # PicoSem
 Simple library to exchange data between core0 and core1 of a Raspberry Pi Pico under Arduino IDE framework.
 
-The library has been tested only with Raspberry Pi Pico P2040.
+The library has been tested only with Raspberry Pi Pico P2040,  Arduino IDE 1.8 and 2.0.
 
 ## **Why this project**
 I'm a beginner with the Pi Pico but from the first glance I understood that the processing speed combined with the presence of the 2 cores can provide an interesting potential compared to the Arduino and ESP16 families.
