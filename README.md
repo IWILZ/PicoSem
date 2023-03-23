@@ -40,6 +40,6 @@ Called to say that i've just read the last data set.
 ```ruby
 bool anyDataFor(uint8_t core);
 ```
-`true` if there is a new data set ready rof `core`
+`true` if there is a new data set ready for `core`
 
 **For more info see the examples and enjoy!**
