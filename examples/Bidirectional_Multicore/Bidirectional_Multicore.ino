@@ -30,7 +30,7 @@ dataType DataFrom0, DataFrom1;
 // ------------------------- setup() ------------------------
 void setup(){
   Sem.setDataEmptyFor(1);         // no data yet for core1
-  Serial.begin();
+  Serial.begin(115200);
   while(!Serial);  
   delay(5000);
   Serial.println("\n------------ Core0 started ------------");
