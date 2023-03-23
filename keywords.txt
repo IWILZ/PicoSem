@@ -1,0 +1,6 @@
+PicoSem	KEYWORD1
+setDataEmptyFor	KEYWORD2
+canISendTo	KEYWORD2
+setDataReadyFor	KEYWORD2
+setDataReadBy	KEYWORD2
+anyDataFor	KEYWORD2
