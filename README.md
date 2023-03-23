@@ -13,3 +13,32 @@ On the other hand, I know the Arduino IDE and C/C++ quite well but I don't have 
 Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/latest/multicore.html where at the "**Multicore Processing**" chapter is described how to manage the dialogue between the 2 cores through the use of semaphores and FIFO queues but the limitation is that any information size is reduced to a single uint32_t variable.
 
 So for this reason I started thinking about a different solution in which the size of the exchange data buffers could be potentially limited only by the available memory.
+
+## **How to use the library**
+First of all create an istance with:
+```ruby
+#define PICO_EMPTY true
+PicoSem Sem(PICO_EMPTY,PICO_EMPTY);
+```
+And then you can use the following calls remembering that valid values of `core` are **0 and 1**:
+```ruby
+void setDataEmptyFor(uint8_t core);
+```
+Called to say that the data buffer for `core` is empty so is ready to accept a new data set.
+```ruby
+bool canISendTo(uint8_t core);
+```
+`true` if i can send a new data set to `core`
+```ruby
+void setDataReadyFor(uint8_t core);
+```
+Called to say that i have just written a new data set for `core`
+```ruby
+void setDataReadBy(uint8_t core);
+```
+Called to say that i've just read the last data set.
+```ruby
+bool anyDataFor(uint8_t core);
+```
+`true` if there is a new data set ready rof `core`
+
