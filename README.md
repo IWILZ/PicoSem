@@ -16,9 +16,19 @@ Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/
 
 So for this reason I started thinking about a different solution in which the size of the exchange data buffers could be potentially limited only by the available memory.
 
+## **Installing the library into Arduino framework**
+To install the library:
+
+1. open Arduino IDE
+2. select "sketch/include library/add ZIP library"
+3. go to the folder you used to download the library and select "PicoSem-main.zip"
+
+Now you should see the PicoSem library in your "**sketch/include library**" list.
+
 ## **How to use the library**
-**First of all create an istance with:**
+**First of all include the header file into your sketch and create an istance with:**
 ```ruby
+#include "PicoSem.h"
 #define PICO_EMPTY true
 PicoSem Sem(PICO_EMPTY,PICO_EMPTY);
 ```
