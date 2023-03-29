@@ -22,7 +22,7 @@ To install the library:
 1. download the "zip" file from GitHub using "Code/Download ZIP" in a folder of your PC
 2. open Arduino IDE
 3. select "sketch/include library/add ZIP library"
-4. go to the folder you used to download the library and select "PicoSem-main.zip"
+4. go to the folder you used to save the zip and select "PicoSem-main.zip"
 
 Now you should see the PicoSem library in your "**sketch/include library**" list.
 
