@@ -16,6 +16,11 @@ Perhaps the most interesting document is https://arduino-pico.readthedocs.io/en/
 
 So for this reason I started thinking about a different solution in which the size of the exchange data buffers could be potentially limited only by the available memory.
 
+## **The concept of this work**
+As defined in https://en.wikipedia.org/wiki/Semaphore_(programming), a semaphore is "a variable or abstract data type used to control access to a common resource by multiple threads".
+
+This library uses 2 semaphores and 2 unidirectional data buffers to reach the goal so it's important to underline that each buffer is "one-way" and is also a "common resource" betwen the 2 cores (one writing and the other reading) and so to make a real bidirectional data exchange, you will need define 2 different data buffers.
+
 ## **Installing the library into Arduino framework**
 To install the library:
 
