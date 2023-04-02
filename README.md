@@ -19,12 +19,10 @@ So for this reason I started thinking about a different solution in which the si
 ## **The concept of this work**
 As defined in https://en.wikipedia.org/wiki/Semaphore_(programming), a semaphore is "a variable or abstract data type used to control access to a common resource by multiple threads".
 
-This library uses 2 semaphores and 2 unidirectional data buffers to reach the goal but it's important to underline that each buffer is "one-way" even if is also a "common resource" betwen the 2 cores (one writing and the other reading) and so to make a complete bidirectional data exchange, you will need to define and use 2 different data buffers.
+This library contains 2 semaphores (integrated into the library itself) to allow coordinated exchange of information between 2 cores by signaling the status of 2 data buffers.
+It is important to note that **the definition of the 2 buffers is left to the user** who can thus create them as he likes both in terms of structure and size.
 
-This library employs 2 semaphores (built into the library itself) to allow information to be exchanged between 2 cores by signaling the status of 2 data buffers.
-It is important to note that the definition of the 2 buffers is left to the user who thus has the possibility to create them as he likes both in terms of structure and size.
-
-Furthermore, each buffer (although a shared resource) must be used in a "unidirectional" way in the sense that it will be written by one core and read by the other using the library functions to coordinate in carrying out their tasks.
+Also, **each data buffer (although it is a shared resource) is "unidirectional"**, meaning that it will be written by one core and read by the other using library functions to coordinate in performing their tasks.
 
 ## **Installing the library into Arduino framework**
 To install the library:
