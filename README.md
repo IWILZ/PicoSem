@@ -24,7 +24,7 @@ It is important to note that **the definition of the 2 buffers is left to the us
 
 Also, **each data buffer (although it is a shared resource) is "unidirectional"**, meaning that it will be written by one core and read by the other using library functions to coordinate in performing their tasks.
 
-A typical scenario could be a data logger where core0 sends to core1 a request to sample some data using an external sensor and core1 returns these data once they are produced. In this example the communication buffer from core0 to core1 could be limited to a couple of byte while the data sent back to core0 will have a bigger size and a different structure.
+A typical scenario could be a data logger where core0 sends to core1 a request to sample some data using an external sensor and core1 returns these data once they are produced. In this example the communication buffer from core0 to core1 could be limited to a couple of byte while the data sent back to core0 will probably have a bigger size and a different structure.
 
 ## **Installing the library into Arduino framework**
 To install the library:
