@@ -1,0 +1,28 @@
+{
+  "name": "PicoSem",
+  "version": "1.0.1",
+  "description": "Dual-core semaphore library for Raspberry Pi Pico (RP2040). Lightweight inter-core communication for dual-core applications.",
+  "keywords": [
+    "rp2040",
+    "pico",
+    "dual-core",
+    "semaphore",
+    "inter-core",
+    "communication",
+    "synchronization"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IWILZ/PicoSem.git"
+  },
+  "authors": [
+    {
+      "name": "IWILZ",
+      "maintainer": true
+    }
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/IWILZ/PicoSem",
+  "frameworks": ["arduino"],
+  "platforms": ["raspberrypi"]
+}
