@@ -1,7 +1,6 @@
 # PicoSem
 
-![multicore](https://user-images.githubusercontent.com/94467184/227287932-86e3caef-43c6-4c5b-bab0-bbf243b89ef1.jpg)
-![multicore](https://github.com/IWILZ/Picosem/images/PicoSem_banner.jpg)
+![multicore](images/PicoSem_banner.jpg)
 
 [![RP2040](https://img.shields.io/badge/RP2040-Raspberry%20Pi%20Pico-C51A4A?logo=raspberrypi)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)
 [![Arduino](https://img.shields.io/badge/Arduino.IDE-Compatible-00979D?logo=arduino)](https://arduino-pico.readthedocs.io/)
