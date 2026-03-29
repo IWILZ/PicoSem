@@ -1,7 +1,7 @@
 # PicoSem
 Simple library that implements semaphores to **exchange data between two cores of a Raspberry Pi Pico** under Arduino IDE framework. 
 
-The library has been tested only with Raspberry Pi Pico P2040,  Arduino IDE 1.8 and 2.0
+The library has been tested only with Raspberry Pi Pico RP2040,  Arduino IDE 1.8 and 2.0, PlatformIO
 
 ![multicore](https://user-images.githubusercontent.com/94467184/227287932-86e3caef-43c6-4c5b-bab0-bbf243b89ef1.jpg)
 
