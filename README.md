@@ -7,7 +7,7 @@
 [![PlatformIO](https://img.shields.io/badge/PlatformIO-Compatible-orange?logo=platformio)](https://registry.platformio.org/platforms/platformio/raspberrypi)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue)](LICENSE)
 
-Simple library that implements semaphores to **exchange data between two cores of a Raspberry Pi Pico** under Arduino IDE framework. 
+Simple library that implements semaphores to **exchange data between two cores of a Raspberry Pi Pico** 
 
 The library has been tested with Raspberry Pi Pico RP2040, PlatformIO, Arduino IDE 1.8 and 2.0
 
